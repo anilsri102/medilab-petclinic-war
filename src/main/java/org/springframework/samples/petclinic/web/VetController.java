@@ -51,14 +51,14 @@ public class VetController {
         return "vets/vetList";
     }
 
-    @GetMapping(value = "/vets.json", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value =  "/vets.json", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public
     Vets showJsonVetList() {
         return getVets();
     }
 
-    @GetMapping(value = "/vets.xml", produces = MediaType.APPLICATION_XML_VALUE)
+    @GetMapping(value =  "/vets.xml", produces = MediaType.APPLICATION_XML_VALUE)
     @ResponseBody
     public
     Vets showXmlVetList() {
